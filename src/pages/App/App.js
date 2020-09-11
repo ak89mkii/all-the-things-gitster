@@ -77,23 +77,23 @@ class App extends Component {
     alexsThings: [
       {
         name: "Science Fiction",
-        image: "",  
-        attributes: [""],
+        image: "https://static.seattletimes.com/wp-content/uploads/2014/03/2023110881-300x0.jpg",  
+        attributes: ["Entertaining"],
       },
       {
         name: "Coffee",
-        image: "",
-        attributes: [""], 
+        image: "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2019/7/30/0/FN_coffee-cup-stock-getty_s6x4.jpg.rend.hgtvcom.616.411.suffix/1564517252380.jpeg",
+        attributes: ["Tastes good", "Caffeine"], 
       },
       {
         name: "Snowboarding",
-        image: "",
-        attributes: [""],
+        image: "https://hips.hearstapps.com/amv-prod-gp.s3.amazonaws.com/gearpatrol/wp-content/uploads/2019/11/Hard-Boot-Snowboard-Gear-Patrol-Lead-Full.jpg",
+        attributes: ["Fun", "Healthy"],
       },
       { 
         name: "Video Games", 
-        image: "", 
-        attributes: [""], 
+        image: "https://img-new.cgtrader.com/items/127314/713d837328/13-video-game-consoles-pack-3d-model-low-poly-obj-mtl-3ds-fbx.jpg", 
+        attributes: ["Fun"], 
       },
     ] 
   } 
@@ -109,7 +109,7 @@ class App extends Component {
               <a href="/themanliestthings">Ben's Things</a>
               <br>
               </br>
-              <a href="/adequatethings">Alex's Things</a> 
+              <a href="/alexsthings">Alex's Things</a> 
             </>
           }
         />
@@ -129,7 +129,7 @@ class App extends Component {
             />
         }/>
          <Route 
-          exact path='/adequatethings'
+          exact path='/alexsthings'
           render={() => 
             <AlexsThings 
               alexsThings={this.state.alexsThings}
