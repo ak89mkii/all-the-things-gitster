@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom'
 import './App.css';
 import BensThings from '../BensThings/BensThings'
 import PratikThings from '../PratikThings/PratikThings'
+import JuliosThings from '../JuliosThings/JuliosThings'
 
 class App extends Component {
   state = { 
@@ -92,7 +93,7 @@ class App extends Component {
       },
       {
         name: 'Musicals',
-        image: 'https://i.imgur.com/pfoaOFE.mp4',
+        image: 'https://i.imgur.com/pfoaOFE.gif',
         attributes: ['these are a few of my favorite things', 'love musie and great stories'] 
       },
 
@@ -115,7 +116,7 @@ class App extends Component {
         attributes: ['current gen corei7','mid range','1660 ti','upgrading soon']
       }
     ]
-    
+
   } 
   render() {
     return (
@@ -129,6 +130,9 @@ class App extends Component {
               <a href="/themanliestthings">Ben's Things</a>
               <div>
               <a href="/pratiksthings">Pratik's Things</a>
+              </div>
+              <div>
+              <a href='/juliosthings'>Julio's Things</a>
               </div>
             </>
           }
@@ -148,6 +152,15 @@ class App extends Component {
               pratiksThings={this.state.pratiksThings}
             />
         }/>
+        <Route 
+        exact path='/juliosthings'
+        render={() =>
+        <JuliosThings
+        juliosThings={this.state.juliosThings}
+        />
+        }
+        />
+
       </>
       
     );
