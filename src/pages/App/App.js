@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Route } from 'react-router-dom'
 import './App.css';
 import BensThings from '../BensThings/BensThings'
+import AlexsThings from '../AlexsThings/AlexsThings'
 
 class App extends Component {
   state = { 
@@ -71,6 +72,28 @@ class App extends Component {
         image: "https://i.imgur.com/gRxOxsA.jpg", 
         attributes: ["makes you live a long time", "consistent poops", "probably tacos sometimes!", "farm to market"], 
       },
+    ],
+    alexsThings: [
+      {
+        name: "Science Fiction",
+        image: "",  
+        attributes: [""],
+      },
+      {
+        name: "Coffee",
+        image: "",
+        attributes: [""], 
+      },
+      {
+        name: "Snowboarding",
+        image: "",
+        attributes: [""],
+      },
+      { 
+        name: "Video Games", 
+        image: "", 
+        attributes: [""], 
+      },
     ] 
   } 
   render() {
@@ -82,7 +105,10 @@ class App extends Component {
             <>
               {/* All the <a> tags should live here */}
               <h2>All-The-Things</h2>
-              <a href="/themanliestthings">Ben's Things</a> 
+              <a href="/themanliestthings">Ben's Things</a>
+              <br>
+              </br>
+              <a href="/adequatethings">Alex's Things</a> 
             </>
           }
         />
@@ -92,6 +118,13 @@ class App extends Component {
           render={() => 
             <BensThings 
               bensThings={this.state.bensThings}
+            />
+        }/>
+         <Route 
+          exact path='/adequatethings'
+          render={() => 
+            <AlexsThings 
+              alexsThings={this.state.alexsThings}
             />
         }/>
       </>
