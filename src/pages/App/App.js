@@ -4,6 +4,7 @@ import './App.css';
 import BensThings from '../BensThings/BensThings'
 import AlexsThings from '../AlexsThings/AlexsThings'
 import PratikThings from '../PratikThings/PratikThings'
+import JuliosThings from '../JuliosThings/JuliosThings'
 
 class App extends Component {
   state = { 
@@ -81,6 +82,7 @@ class App extends Component {
         attributes: ["Entertaining"],
       },
       {
+
         name: "Coffee",
         image: "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2019/7/30/0/FN_coffee-cup-stock-getty_s6x4.jpg.rend.hgtvcom.616.411.suffix/1564517252380.jpeg",
         attributes: ["Tastes good", "Caffeine"], 
@@ -89,13 +91,36 @@ class App extends Component {
         name: "Snowboarding",
         image: "https://hips.hearstapps.com/amv-prod-gp.s3.amazonaws.com/gearpatrol/wp-content/uploads/2019/11/Hard-Boot-Snowboard-Gear-Patrol-Lead-Full.jpg",
         attributes: ["Fun", "Healthy"],
+
+        name: 'Cuban Food',
+        image: 'https://i.imgur.com/W2Shar1.jpg',
+        attributes: ['yummy in my tummy', 'best food ever', 'definitely not a taco', 'delicioso']
+      },
+      {
+        name: 'Musicals',
+        image: 'https://i.imgur.com/pfoaOFE.gif',
+        attributes: ['these are a few of my favorite things', 'love musicals and great stories'] 
+      },
+
+    ],
+
+    pratiksThings: [
+      {
+        name: 'Flat Earth',
+        image: 'https://i.imgur.com/M7ioxoG.jpg',
+        attributes: ['it looks flat', 'there is no curve', 'water finds its level']
       },
       { 
         name: "Video Games", 
         image: "https://img-new.cgtrader.com/items/127314/713d837328/13-video-game-consoles-pack-3d-model-low-poly-obj-mtl-3ds-fbx.jpg", 
         attributes: ["Fun"], 
       },
-    ] 
+      {
+        name: 'Compouter',
+        image: 'https://i.imgur.com/rzd90BF.png',
+        attributes: ['current gen corei7','mid range','1660 ti','upgrading soon']
+      }
+    ]
   } 
   render() {
     return (

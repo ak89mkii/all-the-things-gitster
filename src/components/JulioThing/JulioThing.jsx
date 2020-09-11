@@ -1,14 +1,14 @@
 import React from 'react';
 
-const AlexThing = (props) => {
+const JulioThing = (props) => {
   return ( 
     <>
       <div class="card" style={{width: "18rem"}}>
-        <img src={props.thing.image} class="card-img-top" alt="benimage" />
+        <img src={props.thing.image} class="card-img-top" alt="julioimage" />
         <div class="card-body">
           <h5 class="card-title">{props.thing.name}</h5>
-          {props.thing.attributes.map((attribute, idx) =>
-            <p key={idx} class="card-text">{attribute}</p> 
+          {props.thing.attributes.map((attribute) =>
+            <p class="card-text">{attribute}</p> 
           )}
           <a href="/" class="btn btn-primary">Go Back</a>
         </div>
@@ -17,4 +17,4 @@ const AlexThing = (props) => {
    );
 }
  
-export default AlexThing;
+export default JulioThing;
