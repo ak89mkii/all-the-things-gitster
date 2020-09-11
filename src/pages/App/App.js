@@ -73,6 +73,31 @@ class App extends Component {
         attributes: ["makes you live a long time", "consistent poops", "probably tacos sometimes!", "farm to market"], 
       },
     ],
+
+    juliosThings: [
+      { 
+        name: 'Flash',
+        image: 'https://i.imgur.com/uepNv4H.jpg',
+        attributes: ['Favorite Hero', 'Fastest Man Alive', 'Crimson Comet', 'Scarlet Speedster']
+      },
+      {
+        name: 'Nintendo',
+        image: 'https://i.imgur.com/qPMww0L.jpg',
+        attributes: ['super portable', 'great games', 'fun times']
+      },
+      {
+        name: 'Cuban Food',
+        image: 'https://i.imgur.com/W2Shar1.jpg',
+        attributes: ['yummy in my tummy', 'best food ever', 'definitely a taco', 'delicioso']
+      },
+      {
+        name: 'Musicals',
+        image: 'https://i.imgur.com/pfoaOFE.mp4',
+        attributes: ['these are a few of my favorite things', 'love musie and great stories'] 
+      },
+
+    ],
+
     pratiksThings: [
       {
         name: 'Flat Earth',
@@ -90,6 +115,7 @@ class App extends Component {
         attributes: ['current gen corei7','mid range','1660 ti','upgrading soon']
       }
     ]
+    
   } 
   render() {
     return (
