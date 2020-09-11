@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom'
 import './App.css';
 import BensThings from '../BensThings/BensThings'
 import AlexsThings from '../AlexsThings/AlexsThings'
+import PratikThings from '../PratikThings/PratikThings'
 
 class App extends Component {
   state = { 
@@ -118,6 +119,13 @@ class App extends Component {
           render={() => 
             <BensThings 
               bensThings={this.state.bensThings}
+            />
+        } />
+          <Route 
+          exact path='/pratiksthings'
+          render={() => 
+            <PratikThings 
+              pratiksThings={this.state.pratiksThings}
             />
         }/>
          <Route 
