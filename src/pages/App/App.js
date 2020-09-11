@@ -89,12 +89,12 @@ class App extends Component {
       {
         name: 'Cuban Food',
         image: 'https://i.imgur.com/W2Shar1.jpg',
-        attributes: ['yummy in my tummy', 'best food ever', 'definitely a taco', 'delicioso']
+        attributes: ['yummy in my tummy', 'best food ever', 'definitely not a taco', 'delicioso']
       },
       {
         name: 'Musicals',
         image: 'https://i.imgur.com/pfoaOFE.gif',
-        attributes: ['these are a few of my favorite things', 'love musie and great stories'] 
+        attributes: ['these are a few of my favorite things', 'love musicals and great stories'] 
       },
 
     ],
